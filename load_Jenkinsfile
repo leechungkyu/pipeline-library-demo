@@ -1,0 +1,8 @@
+
+node('master') {
+  stage('Demo') {
+    checkout scm
+    def m = load('modules/module1.groovy')
+    m.func2(["load", "test"])   
+  }
+}
