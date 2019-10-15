@@ -9,3 +9,5 @@ static def printOptions(options = []) {
     sh "echo ${options[i]}"
   }
 }
+
+return this;
