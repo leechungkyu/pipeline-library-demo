@@ -6,6 +6,6 @@ def abc(param1, param2) {
     sh "echo parameters: ${param1}, ${param2}"
     sh "echo jenkins parameters: ${params.env}"
         
-    Util.listOptions([param1, param2])   
+    Util.printOptions([param1, param2])   
   }
 }
