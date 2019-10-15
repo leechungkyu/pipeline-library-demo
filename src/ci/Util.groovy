@@ -6,5 +6,6 @@ static def printOptions(options = []) {
   println "this is module"
   for(int i = 0; i < options.size(); i++) {
     println options[i]
+    sh "echo ${options[i]}"
   }
 }
