@@ -6,6 +6,7 @@ def abc(param1, param2) {
     sh "echo parameters: ${param1}, ${param2}"
     sh "echo jenkins parameters: ${params.env}"
         
-    Util.printOptions([param1, param2])   
+    def util = new Util()
+    util.printOptions([param1, param2])   
   }
 }
