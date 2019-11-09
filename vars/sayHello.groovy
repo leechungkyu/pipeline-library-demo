@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(String name = 'human') {
+def ppp(String name = 'human') {
   echo "안녕하세요! ${name}."
   echo "안녕하세요! ${name}."
   echo "안녕하세요! ${name}."
